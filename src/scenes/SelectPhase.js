@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 
 var helpText = "Pick a card from the slider and then click 'Play' when you are ready to proceed and plan with your friends." +
-    " " + "Pick a card by dragging or clicking the dots below the deck";
+    " " + "Pick a card by dragging the deck or clicking the dots below the deck";
 
 class SelectPhase extends Component {
 
