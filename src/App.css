@@ -74,6 +74,11 @@
         margin: auto;
         width: 15% !important;
     }
+
+    .img-waiting{
+        margin: auto;
+        width: 14%;
+    }
 }
 /*Nexus 6P and Nexus 5X Landscape*/
 @media only screen and (max-width: 733px) and (min-width: 731px) and (orientation:landscape) {
@@ -85,6 +90,11 @@
         margin: auto;
         width: 20% !important;
     }
+
+    .img-waiting{
+        margin: auto;
+        width: 18%;
+    }
 }
 /*Galaxy 5S*/
 @media only screen and (max-width: 641px) and (min-width: 639px) and (orientation:landscape) {
@@ -95,6 +105,11 @@
     .carousel-image{
         margin: auto;
         width: 16% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 16%;
     }
 }
 /*Ipad Portrait*/
@@ -217,6 +232,11 @@
 
 body {
     overflow: hidden;
+}
+
+.img-waiting{
+    margin: auto;
+    width: 20%;
 }
 
 .testa{
