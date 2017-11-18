@@ -1,25 +1,4 @@
-@media only screen and (max-width: 500px) {
-    .logo {
-        width: 63% !important;
-    }
-
-    .carousel-image{
-        margin: auto;
-        width: 100% !important;
-    }
-}
-
-@media only screen and (max-width: 1025px) and (orientation:landscape) {
-    .logo {
-        width: 63% !important;
-    }
-
-    .carousel-image{
-        margin: auto;
-        width: 37% !important;
-    }
-}
-
+/*Ipad Pro Landscape*/
 @media only screen and (max-width: 1367px) and (min-width: 1365px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
@@ -29,9 +8,32 @@
         margin: auto;
         width: 100% !important;
     }
+
+    .img-waiting{
+        margin: auto;
+        width: 35%;
+    }
 }
 
-@media only screen and (max-width: 738px) and (min-width: 736px) and (orientation:landscape) {
+/*Ipad Landscape*/
+@media only screen and (max-width: 1025px) and (min-width: 1023px) and (orientation:landscape) {
+    .logo {
+        width: 63% !important;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 37% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 35%;
+    }
+}
+
+/*Iphone 6 Plus Landscape*/
+@media only screen and (max-width: 737px) and (min-width: 735px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
@@ -40,8 +42,13 @@
         margin: auto;
         width: 22% !important;
     }
-}
 
+    .img-waiting{
+        margin: auto;
+        width: 18%;
+    }
+}
+/*Iphone 6 Landscape*/
 @media only screen and (max-width: 668px) and (min-width: 666px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
@@ -51,8 +58,13 @@
         margin: auto;
         width: 20% !important;
     }
-}
 
+    .img-waiting{
+        margin: auto;
+        width: 16%;
+    }
+}
+/*Iphone 5 Landscape*/
 @media only screen and (max-width: 569px) and (min-width: 567px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
@@ -63,7 +75,7 @@
         width: 15% !important;
     }
 }
-
+/*Nexus 6P and Nexus 5X Landscape*/
 @media only screen and (max-width: 733px) and (min-width: 731px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
@@ -74,7 +86,7 @@
         width: 20% !important;
     }
 }
-
+/*Galaxy 5S*/
 @media only screen and (max-width: 641px) and (min-width: 639px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
@@ -85,16 +97,121 @@
         width: 16% !important;
     }
 }
-
+/*Ipad Portrait*/
 @media only screen and (max-width: 769px) and (min-width: 767px) and (orientation:portrait) {
     .logo {
         width: 26% !important;
     }
-}
 
+    .img-waiting{
+        margin: auto;
+        width: 68%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 80% !important;
+    }
+}
+/*Ipad Pro portrait*/
 @media only screen and (max-width: 1026px) and (min-width: 1023px) and (orientation:portrait) {
     .logo {
         width: 32% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 70%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 80% !important;
+    }
+}
+
+/*Iphone 6 plus portrait*/
+@media only screen and (max-width: 415px) and (min-width: 413px) and (orientation:portrait) {
+    .logo {
+        width: 50% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 75%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 100% !important;
+    }
+}
+
+/*Iphone 6 portrait*/
+@media only screen and (max-width: 376px) and (min-width: 374px) and (orientation:portrait) {
+    .logo {
+        width: 55% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 70%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 100% !important;
+    }
+}
+
+/*Iphone 5 portrait*/
+@media only screen and (max-width: 321px) and (min-width: 319px) and (orientation:portrait) {
+    .logo {
+        width: 60% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 65%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 100% !important;
+    }
+}
+
+/*Nexus 5x and Nexus 6P Portrait*/
+@media only screen and (max-width: 413px) and (min-width: 411px) and (orientation:portrait) {
+    .logo {
+        width: 60% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 70%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 100% !important;
+    }
+}
+
+/*Galaxy S5 Portrait*/
+@media only screen and (max-width: 361px) and (min-width: 359px) and (orientation:portrait) {
+    .logo {
+        width: 60% !important;
+    }
+
+    .img-waiting{
+        margin: auto;
+        width: 70%;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 100% !important;
     }
 }
 

@@ -11,7 +11,7 @@ class WaitingPhase extends Component {
         return (
             <div className="App">
                 <br/>
-                <div className={this.props.animateStyle}><img style={{margin: "auto", width: "18%"}} src={backCard}/></div>
+                <div className={this.props.animateStyle}><img className="img-waiting" src={backCard}/></div>
                 <br/>
                 <b>Wait for the other players to pick their card before you proceed.</b>
                 <br/>
