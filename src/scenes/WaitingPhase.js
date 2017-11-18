@@ -10,18 +10,20 @@ class WaitingPhase extends Component {
     render() {
         return (
             <div className="App">
-                This is the Waiting Phase
                 <br/>
-                <div><img style={{margin: "auto", width: "22%"}} src={backCard}/></div>
+                <div className={this.props.animateStyle}><img style={{margin: "auto", width: "18%"}} src={backCard}/></div>
                 <br/>
-                {this.props.selectedCard}
+                <b>Wait for the other players to pick their card before you proceed.</b>
+                <br/>
+                <b>When you are ready, click "Proceed to reveal" to reveal your card.</b>
             </div>
         );
     }
 }
 
 WaitingPhase.propTypes = {
-    selectedCard: PropTypes.number
+    selectedCard: PropTypes.number,
+    animateStyle: PropTypes.string
 };
 
 
