@@ -25,11 +25,7 @@ class CardCarousel extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             draggable: true,
-            centerMode: true,
-
-            beforeChange: function (currentSlide, nextSlide) {
-                console.log('before change', currentSlide, nextSlide);
-            }
+            centerMode: true
         };
 
 

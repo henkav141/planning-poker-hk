@@ -1,9 +1,6 @@
 /**
  * Created by Henrik on 2017-11-18.
  */
-/**
- * Created by Henrik on 2017-11-18.
- */
 import React, {Component} from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';
