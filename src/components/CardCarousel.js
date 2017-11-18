@@ -25,25 +25,40 @@ class CardCarousel extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             draggable: true,
-            centerMode: true
+            centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 321,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: false
+                    }
+                }
+            ]
         };
 
 
         return (
-            <div style={{width:"98%"}}>
+            <div className="carousel-container">
                 <Slider afterChange={(currentCard) => this.props.selectedCard(currentCard)} {...settings}>
-                    <div><img style={{margin: "auto", width: "70%"}} src={zeroCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={zeroFiveCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={oneCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={twoCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={fiveCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={eightCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={thirteenCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={twentyCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={oneHundredCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={questionMarkCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={coffeeCard}/></div>
-                    <div><img style={{margin: "auto", width: "70%"}} src={noCard}/></div>
+                    <div><img className="carousel-image" src={zeroCard}/></div>
+                    <div><img className="carousel-image" src={zeroFiveCard}/></div>
+                    <div><img className="carousel-image" src={oneCard}/></div>
+                    <div><img className="carousel-image" src={twoCard}/></div>
+                    <div><img className="carousel-image" src={fiveCard}/></div>
+                    <div><img className="carousel-image" src={eightCard}/></div>
+                    <div><img className="carousel-image" src={thirteenCard}/></div>
+                    <div><img className="carousel-image" src={twentyCard}/></div>
+                    <div><img className="carousel-image" src={oneHundredCard}/></div>
+                    <div><img className="carousel-image" src={questionMarkCard}/></div>
+                    <div><img className="carousel-image" src={coffeeCard}/></div>
+                    <div><img className="carousel-image" src={noCard}/></div>
                 </Slider>
             </div>
 

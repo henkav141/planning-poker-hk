@@ -63,12 +63,12 @@ class MainSceneContainer extends Component {
     render() {
         return (
             <div className="App">
-                <Grid fluid={true}>
+                <Grid className="testa" fluid={true}>
                     <header className="App-header">
                         <Row className="show-grid">
-                            <Col xs={6} md={4}><img style={{width: "20%"}} src={ChasLogo}/></Col>
+                            <Col xs={6} md={4}><img className="logo" src={ChasLogo}/></Col>
                             <Col xs={6} md={4}></Col>
-                            <Col xsHidden md={4}>
+                            <Col xs={6} md={4}>
                                 <Button bsStyle="primary"
                                         onClick={() => this.nextPath(this.state.path)}>{this.state.buttonTitle}</Button>
                             </Col>

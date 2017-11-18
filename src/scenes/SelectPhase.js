@@ -40,8 +40,7 @@ class SelectPhase extends Component {
                     <Row className="showGrid">
                         <br/>
                         <br/>
-                        <br/>
-                        <br/>
+
                     </Row>
                     <Row className="showGrid">
                         <Button bsStyle="primary" onClick={() => Popup.alert(helpText, "Planning Poker", true)}>

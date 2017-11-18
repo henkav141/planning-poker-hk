@@ -1,38 +1,67 @@
+@media only screen and (max-width: 500px) {
+
+    .logo {
+        width: 63% !important;
+    }
+
+    .carousel-image{
+        margin: auto;
+        width: 100% !important;
+    }
+
+}
+
 body {
-  overflow:hidden;
+    overflow: hidden;
+}
+
+.testa{
+    padding: 0 !important;
+}
+
+.logo {
+    width: 20%;
+}
+
+.carousel-image{
+    margin: auto;
+    width: 70%;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .test {
-  display: inline-table;
+    display: inline-table;
 }
 
 .App-header {
-  background-color: #222;
-  /*height: 150px;*/
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
-  font-family: Georgia;
-  margin-top: 0px !important;
+    font-size: 1.5em;
+    font-family: Georgia;
+    margin-top: 0px !important;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
