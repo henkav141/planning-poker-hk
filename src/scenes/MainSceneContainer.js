@@ -18,7 +18,7 @@ class MainSceneContainer extends Component {
             currentCard: 0,
             buttonTitle: "Play now!",
             path: "/waiting",
-            animate: "animated infinite pulse",
+            animate: "",
         };
     }
 
@@ -29,16 +29,13 @@ class MainSceneContainer extends Component {
     }
 
     nextPath(path) {
-
         if (path === "/waiting") {
-            this.props.history.push(path);
-
             this.setState({
                 buttonTitle: "Proceed to reveal",
                 path: "/reveal",
                 animate: "animated fadeIn"
             });
-
+            this.props.history.push(path);
             setTimeout(() => {
                 this.setState({
                 animate: "animated infinite pulse"
@@ -62,7 +59,6 @@ class MainSceneContainer extends Component {
             this.props.history.push(path);
         }
     }
-
 
     render() {
         return (
