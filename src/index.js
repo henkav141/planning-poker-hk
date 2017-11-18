@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import SelectPhase from './scenes/SelectPhase';
+import MainSceneContainer from './scenes/MainSceneContainer';
+import { BrowserRouter } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<SelectPhase />, document.getElementById('root'));
 registerServiceWorker();
+ReactDOM.render(
+    <BrowserRouter>
+        <MainSceneContainer />
+    </BrowserRouter>
+    , document.getElementById('root')
+);

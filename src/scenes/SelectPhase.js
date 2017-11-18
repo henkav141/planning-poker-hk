@@ -6,32 +6,34 @@ import '../App.css';
 import '../popup.css';
 import {Button, Grid, Row, Col} from 'react-bootstrap';
 import CardCarousel from '../components/CardCarousel';
-import chasLogo from '../assets/chas-logo-white-512.png';
-import Popup from 'react-popup';;
+import Popup from 'react-popup';
+;
 
 
 var helpText = "Pick a card from the slider and then click 'Play' when you are ready to proceed and plan with your friends." +
     " " + "Pick a card by dragging or clicking the dots below the deck";
 
 class SelectPhase extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            currentCard: 0,
+        };
+    }
+
+    handleCardChange(e) {
+        this.setState({
+            currentCard: e
+        })
+    }
+
     render() {
         return (
             <div className="App">
                 <Grid fluid={true}>
-                        <header className="App-header">
-                    <Row className="show-grid">
-                        <Col xs={6} md={4}><img style={{width: "20%"}} src={chasLogo}/></Col>
-                        <Col xs={6} md={4}><h1 className="App-title">Planning Poker</h1></Col>
-                        <Col xsHidden md={4}>
-                            <Button bsStyle="primary">Play now!</Button>
-                        </Col>
-                    </Row>
-                        </header>
                     <Row className="showGrid">
-                        <br/>
-                    </Row>
-                    <Row className="showGrid">
-                        <CardCarousel/>
+                        <CardCarousel selectedCard={(e) => this.handleCardChange(e)}/>
                     </Row>
                     <Row className="showGrid">
                         <br/>
@@ -53,7 +55,7 @@ class SelectPhase extends Component {
                     defaultOk="Ok"
                     defaultCancel="Cancel"
                     wildClasses={false}
-                    closeOnOutsideClick={true} />
+                    closeOnOutsideClick={true}/>
             </div>
         );
     }

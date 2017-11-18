@@ -15,23 +15,13 @@ import oneHundredCard from '../assets/cards/100-card.jpg';
 import coffeeCard from '../assets/cards/coffee-card.jpg';
 import noCard from '../assets/cards/no-card.jpg';
 import questionMarkCard from '../assets/cards/question-mark-card.jpg';
-
-
-var backOfCard = "https://i.imgur.com/AOXbekl.jpg";
+import PropTypes from 'prop-types';
 
 class CardCarousel extends Component {
     constructor(props) {
         super(props);
-        // Must initialize state first
-        this.state = { activeCard: 0 };
     }
 
-    handleCardChange(currentCard){
-        this.setState({
-            activeCard: currentCard
-        })
-        console.log("STATE IS: " + this.state.activeCard)
-    }
 
     render() {
         const settings = {
@@ -50,7 +40,7 @@ class CardCarousel extends Component {
 
         return (
             <div style={{width:"98%"}}>
-                <Slider afterChange={(currentCard) => this.handleCardChange(currentCard)} {...settings}>
+                <Slider afterChange={(currentCard) => this.props.selectedCard(currentCard)} {...settings}>
                     <div><img style={{margin: "auto", width: "70%"}} src={zeroCard}/></div>
                     <div><img style={{margin: "auto", width: "70%"}} src={zeroFiveCard}/></div>
                     <div><img style={{margin: "auto", width: "70%"}} src={oneCard}/></div>
@@ -68,6 +58,10 @@ class CardCarousel extends Component {
 
         );
     }
+};
+
+CardCarousel.propTypes = {
+    selectedCard: PropTypes.func
 };
 
 export default CardCarousel;
