@@ -16,29 +16,41 @@ import coffeeCard from '../assets/cards/coffee-card.jpg';
 import noCard from '../assets/cards/no-card.jpg';
 import questionMarkCard from '../assets/cards/question-mark-card.jpg';
 
-var settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    draggable: true,
-    centerMode: true,
-
-    beforeChange: function (currentSlide, nextSlide) {
-        console.log('before change', currentSlide, nextSlide);
-    },
-    afterChange: function (currentSlide) {
-        console.log('after change', currentSlide);
-    },
-};
 
 var backOfCard = "https://i.imgur.com/AOXbekl.jpg";
 
 class CardCarousel extends Component {
+    constructor(props) {
+        super(props);
+        // Must initialize state first
+        this.state = { activeCard: 0 };
+    }
+
+    handleCardChange(currentCard){
+        this.setState({
+            activeCard: currentCard
+        })
+        console.log("STATE IS: " + this.state.activeCard)
+    }
+
     render() {
+        const settings = {
+            dots: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            draggable: true,
+            centerMode: true,
+
+            beforeChange: function (currentSlide, nextSlide) {
+                console.log('before change', currentSlide, nextSlide);
+            }
+        };
+
+
         return (
             <div style={{width:"98%"}}>
-                <Slider {...settings}>
+                <Slider afterChange={(currentCard) => this.handleCardChange(currentCard)} {...settings}>
                     <div><img style={{margin: "auto", width: "70%"}} src={zeroCard}/></div>
                     <div><img style={{margin: "auto", width: "70%"}} src={zeroFiveCard}/></div>
                     <div><img style={{margin: "auto", width: "70%"}} src={oneCard}/></div>
@@ -56,7 +68,6 @@ class CardCarousel extends Component {
 
         );
     }
-}
-;
+};
 
 export default CardCarousel;
