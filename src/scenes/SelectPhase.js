@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 import '../App.css';
-import {Button, Grid, Row, Col} from 'react-bootstrap';
+import {Button, Grid, Row, Col, Glyphicon} from 'react-bootstrap';
 import CardCarousel from '../components/CardCarousel';
 import chasLogo from '../assets/chas-logo-white-512.png';
 
@@ -21,9 +21,22 @@ class SelectPhase extends Component {
                         </Col>
                     </Row>
                         </header>
+                    <Row className="showGrid">
+                        <br/>
+                    </Row>
+                    <Row className="showGrid">
+                        <CardCarousel/>
+                    </Row>
+                    <Row className="showGrid">
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </Row>
+                    <Row className="showGrid">
+                        <Button bsStyle="primary" >In need of help?</Button>
+                    </Row>
                 </Grid>
-
-                <CardCarousel/>
             </div>
         );
     }
