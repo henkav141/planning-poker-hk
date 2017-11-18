@@ -4,10 +4,10 @@
 import React, {Component} from 'react';
 import '../App.css';
 import '../popup.css';
-import {Button, Grid, Row, Col} from 'react-bootstrap';
+import {Button, Grid, Row} from 'react-bootstrap';
 import CardCarousel from '../components/CardCarousel';
 import Popup from 'react-popup';
-;
+import PropTypes from 'prop-types';
 
 
 var helpText = "Pick a card from the slider and then click 'Play' when you are ready to proceed and plan with your friends." +
@@ -26,6 +26,8 @@ class SelectPhase extends Component {
         this.setState({
             currentCard: e
         })
+
+        this.props.selectedCard(e);
     }
 
     render() {
@@ -60,5 +62,9 @@ class SelectPhase extends Component {
         );
     }
 }
+
+SelectPhase.propTypes = {
+    selectedCard: PropTypes.func
+};
 
 export default SelectPhase;

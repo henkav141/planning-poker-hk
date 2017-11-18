@@ -1,16 +1,19 @@
 /**
  * Created by Henrik on 2017-11-18.
  */
+/**
+ * Created by Henrik on 2017-11-18.
+ */
 import React, {Component} from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';
 
 
-class WaitingPhase extends Component {
+class RevealPhase extends Component {
     render() {
         return (
             <div className="App">
-                This is the Waiting Phase
+                This is the Reveal Phase
                 <br/>
                 {this.props.selectedCard}
             </div>
@@ -18,9 +21,9 @@ class WaitingPhase extends Component {
     }
 }
 
-WaitingPhase.propTypes = {
+RevealPhase.propTypes = {
     selectedCard: PropTypes.number
 };
 
 
-export default WaitingPhase;
+export default RevealPhase;

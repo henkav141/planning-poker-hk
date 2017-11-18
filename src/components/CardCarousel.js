@@ -18,11 +18,6 @@ import questionMarkCard from '../assets/cards/question-mark-card.jpg';
 import PropTypes from 'prop-types';
 
 class CardCarousel extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-
     render() {
         const settings = {
             dots: true,
