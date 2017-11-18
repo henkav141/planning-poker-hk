@@ -22,7 +22,14 @@ var settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     draggable: true,
-    centerMode: true
+    centerMode: true,
+
+    beforeChange: function (currentSlide, nextSlide) {
+        console.log('before change', currentSlide, nextSlide);
+    },
+    afterChange: function (currentSlide) {
+        console.log('after change', currentSlide);
+    },
 };
 
 var backOfCard = "https://i.imgur.com/AOXbekl.jpg";
