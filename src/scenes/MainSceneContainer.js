@@ -31,12 +31,19 @@ class MainSceneContainer extends Component {
     nextPath(path) {
 
         if (path === "/waiting") {
+            this.props.history.push(path);
+
             this.setState({
                 buttonTitle: "Proceed to reveal",
                 path: "/reveal",
+                animate: "animated fadeIn"
+            });
+
+            setTimeout(() => {
+                this.setState({
                 animate: "animated infinite pulse"
             });
-            this.props.history.push(path);
+            }, 400);
         } else if (path === "/reveal") {
             this.setState({
                 animate: "animated zoomOut",
