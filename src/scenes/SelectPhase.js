@@ -33,7 +33,7 @@ class SelectPhase extends Component {
     render() {
         return (
             <div className="App">
-                <Grid fluid={true}>
+                <Grid className="animated fadeInUp" fluid={true}>
                     <Row className="showGrid">
                         <CardCarousel selectedCard={(e) => this.handleCardChange(e)}/>
                     </Row>
