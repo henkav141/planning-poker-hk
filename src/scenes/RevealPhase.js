@@ -23,6 +23,9 @@ class RevealPhase extends Component {
         super(props)
         this.state = {
             card: zeroCard,
+            animation: "animated zoomInDown",
+            infoText: "",
+            infoAnimation: ""
         };
     }
 
@@ -75,24 +78,36 @@ class RevealPhase extends Component {
 
         this.setState({
             card: chosenCard
-        })
+        });
+
+        setTimeout(() => {
+            this.setState({
+                animation: "animated infinite pulse"
+            });
+        }, 1000);
+
+        setTimeout(() => {
+            this.setState({
+                infoText: "To pick another card, click 'Start over'",
+                infoAnimation: "animated fadeInDown"
+            });
+        }, 1500);
     }
 
     render() {
         return (
             <div className="App">
-                This is the Reveal Phase
                 <br/>
-                <div><img style={{margin: "auto", width: "22%"}} src={this.state.card}/></div>
+                <div className={this.state.animation}><img style={{margin: "auto", width: "22%"}} src={this.state.card}/></div>
                 <br/>
-                {this.props.selectedCard}
+                <b className={this.state.infoAnimation}>{this.state.infoText}</b>
             </div>
         );
     }
 }
 
 RevealPhase.propTypes = {
-    selectedCard: PropTypes.number
+    selectedCard: PropTypes.number,
 };
 
 

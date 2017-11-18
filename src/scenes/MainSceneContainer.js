@@ -29,6 +29,7 @@ class MainSceneContainer extends Component {
     }
 
     nextPath(path) {
+
         if (path === "/waiting") {
             this.setState({
                 buttonTitle: "Proceed to reveal",
@@ -39,13 +40,11 @@ class MainSceneContainer extends Component {
         } else if (path === "/reveal") {
             this.setState({
                 animate: "animated zoomOut",
+                path: "/",
+                buttonTitle: "Start over"
             });
             setTimeout(() => {
                 this.props.history.push(path);
-                this.setState({
-                    buttonTitle: "Start over",
-                    path: "/"
-                });
             }, 500);
         } else if (path === "/") {
             this.setState({
@@ -81,9 +80,11 @@ class MainSceneContainer extends Component {
                                    render={() => <SelectPhase selectedCard={(e) => this.handleCardChange(e)}/>}/>
                             <Route exact path='/waiting'
                                    render={() => <WaitingPhase selectedCard={this.state.currentCard}
-                                                               animateStyle={this.state.animate}/>}/>
+                                                               animateStyle={this.state.animate}/>}
+                                    />
                             <Route exact path='/reveal'
-                                   render={() => <RevealPhase selectedCard={this.state.currentCard}/>}/>
+                                   render={() => <RevealPhase selectedCard={this.state.currentCard}/>}
+                                   />}/>
                         </Switch>
                     </Row>
                 </Grid>
