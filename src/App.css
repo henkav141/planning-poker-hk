@@ -45,7 +45,7 @@
 /*Iphone 6 Plus Landscape*/
 @media only screen and (max-width: 737px) and (min-width: 735px) and (max-height: 415px) and (min-height: 413px) and (orientation:landscape) {
     .logo {
-        width: 63% !important;
+        width: 28% !important;
     }
 
     .carousel-image{
@@ -66,7 +66,7 @@
 /*Iphone 6 Landscape*/
 @media only screen and (max-width: 668px) and (min-width: 666px) and (max-height: 376px) and (min-height: 374px) and (orientation:landscape) {
     .logo {
-        width: 63% !important;
+        width: 30% !important;
     }
 
     .carousel-image{
@@ -87,7 +87,7 @@
 /*Iphone 5 Landscape*/
 @media only screen and (max-width: 569px) and (min-width: 567px) and (max-height: 321px) and (min-height: 319px) and (orientation:landscape) {
     .logo {
-        width: 63% !important;
+        width: 38% !important;
     }
 
     .carousel-image{
@@ -108,7 +108,7 @@
 /*Nexus 6P and Nexus 5X Landscape*/
 @media only screen and (max-width: 733px) and (min-width: 731px) and (max-height: 413px) and (min-height: 411px) and (orientation:landscape) {
     .logo {
-        width: 63% !important;
+        width: 28% !important;
     }
 
     .carousel-image{
@@ -129,7 +129,7 @@
 /*Galaxy 5S*/
 @media only screen and (max-width: 641px) and (min-width: 639px) and (max-height: 361px) and (min-height: 359px) and (orientation:landscape) {
     .logo {
-        width: 63% !important;
+        width: 32% !important;
     }
 
     .carousel-image{
@@ -237,7 +237,7 @@
 /*Iphone 5 portrait*/
 @media only screen and (max-width: 321px) and (min-width: 319px) and (orientation:portrait) {
     .logo {
-        width: 60% !important;
+        width: 70% !important;
     }
 
     .img-waiting{
@@ -303,7 +303,7 @@
 /*Laptop with HiDPI screen*/
 @media only screen and (max-width: 1441px) and (min-width: 1439px) and (max-height: 901px) and (min-height: 899px) {
     .logo {
-        width: 60% !important;
+        width: 20% !important;
     }
 
     .img-waiting{
@@ -325,7 +325,7 @@
 /*Laptop with MiDPI screen*/
 @media only screen and (max-width: 1281px) and (min-width: 1279px) and (max-height: 801px) and (min-height: 799px) {
     .logo {
-        width: 60% !important;
+        width: 23% !important;
     }
 
     .img-waiting{
@@ -347,7 +347,7 @@
 /*Laptop with Touch screen*/
 @media only screen and (max-width: 1281px) and (min-width: 1279px) and (max-height: 951px) and (min-height: 949px) {
     .logo {
-        width: 60% !important;
+        width: 23% !important;
     }
 
     .img-waiting{

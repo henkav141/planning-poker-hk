@@ -4,7 +4,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';
-import backCard from '../assets/cards/back-card.jpg';
+import backCard from '../assets/cards/back-card-black.jpg';
 
 class WaitingPhase extends Component {
     render() {
