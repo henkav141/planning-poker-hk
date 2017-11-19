@@ -42,7 +42,7 @@ class WaitingPhase extends Component {
                 <br/>
                 <b className={this.state.infoAnimationFirst}>{this.state.infoTextFirst}</b>
                 <br/>
-                <b style={{wordWrap: "break-word"}} className={this.state.infoAnimationSecond}>{this.state.infoTextSecond}</b>
+                <b className={this.state.infoAnimationSecond}>{this.state.infoTextSecond}</b>
             </div>
         );
     }
