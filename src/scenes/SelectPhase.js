@@ -67,4 +67,8 @@ SelectPhase.propTypes = {
     animation: PropTypes.string
 };
 
+SelectPhase.defaultProps = {
+    animation: "animated fadeInUp"
+};
+
 export default SelectPhase;
