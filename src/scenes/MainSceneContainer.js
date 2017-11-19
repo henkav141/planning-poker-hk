@@ -66,7 +66,7 @@ class MainSceneContainer extends Component {
                 <Grid className="testa" fluid={true}>
                     <header className="App-header">
                         <Row className="show-grid">
-                            <Col xs={6} md={4}><img className="logo" src={ChasLogo}/></Col>
+                            <Col xs={6} md={4}><img className="logo" src={ChasLogo} alt="Chas"/></Col>
                             <Col xs={6} md={4}></Col>
                             <Col xs={6} md={4}>
                                 <Button bsStyle="primary"

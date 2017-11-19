@@ -47,18 +47,18 @@ class CardCarousel extends Component {
         return (
             <div className="carousel-container">
                 <Slider afterChange={(currentCard) => this.props.selectedCard(currentCard)} {...settings}>
-                    <div><img className="carousel-image" src={zeroCard}/></div>
-                    <div><img className="carousel-image" src={zeroFiveCard}/></div>
-                    <div><img className="carousel-image" src={oneCard}/></div>
-                    <div><img className="carousel-image" src={twoCard}/></div>
-                    <div><img className="carousel-image" src={fiveCard}/></div>
-                    <div><img className="carousel-image" src={eightCard}/></div>
-                    <div><img className="carousel-image" src={thirteenCard}/></div>
-                    <div><img className="carousel-image" src={twentyCard}/></div>
-                    <div><img className="carousel-image" src={oneHundredCard}/></div>
-                    <div><img className="carousel-image" src={questionMarkCard}/></div>
-                    <div><img className="carousel-image" src={coffeeCard}/></div>
-                    <div><img className="carousel-image" src={noCard}/></div>
+                    <div><img className="carousel-image" src={zeroCard} alt="0"/></div>
+                    <div><img className="carousel-image" src={zeroFiveCard} alt="0.5"/></div>
+                    <div><img className="carousel-image" src={oneCard} alt="1"/></div>
+                    <div><img className="carousel-image" src={twoCard} alt="2"/></div>
+                    <div><img className="carousel-image" src={fiveCard} alt="5"/></div>
+                    <div><img className="carousel-image" src={eightCard} alt="8"/></div>
+                    <div><img className="carousel-image" src={thirteenCard} alt="13"/></div>
+                    <div><img className="carousel-image" src={twentyCard} alt="20"/></div>
+                    <div><img className="carousel-image" src={oneHundredCard} alt="100"/></div>
+                    <div><img className="carousel-image" src={questionMarkCard}alt="?"/></div>
+                    <div><img className="carousel-image" src={coffeeCard} alt="Coffee break"/></div>
+                    <div><img className="carousel-image" src={noCard} alt="I say no"/></div>
                 </Slider>
             </div>
 

@@ -98,7 +98,7 @@ class RevealPhase extends Component {
         return (
             <div className="App">
                 <br/>
-                <div className={this.state.animation}><img style={{margin: "auto", width: "22%"}} src={this.state.card}/></div>
+                <div className={this.state.animation}><img style={{margin: "auto", width: "22%"}} src={this.state.card} alt="Chosen card"/></div>
                 <br/>
                 <b className={this.state.infoAnimation}>{this.state.infoText}</b>
             </div>
