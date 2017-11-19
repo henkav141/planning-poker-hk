@@ -47,7 +47,7 @@ class MainSceneContainer extends Component {
                 this.setState({
                 animate: "animated infinite pulse"
             });
-            }, 400);
+            }, 850);
         } else if (path === "/reveal") {
             this.setState({
                 animate: "animated zoomOut",
