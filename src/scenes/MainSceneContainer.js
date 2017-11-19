@@ -19,6 +19,7 @@ class MainSceneContainer extends Component {
             buttonTitle: "Play now!",
             path: "/waiting",
             animate: "",
+            selectPhaseAnimation: "animated fadeInUp"
         };
     }
 
@@ -31,11 +32,17 @@ class MainSceneContainer extends Component {
     nextPath(path) {
         if (path === "/waiting") {
             this.setState({
-                buttonTitle: "Proceed to reveal",
-                path: "/reveal",
-                animate: "animated fadeIn"
+                selectPhaseAnimation: "animated fadeOutDown"
             });
-            this.props.history.push(path);
+            setTimeout(() => {
+                this.setState({
+                    animate: "animated fadeIn",
+                    buttonTitle: "Proceed to reveal",
+                    path: "/reveal"
+                });
+                this.props.history.push(path);
+            }, 680);
+
             setTimeout(() => {
                 this.setState({
                 animate: "animated infinite pulse"
@@ -45,7 +52,8 @@ class MainSceneContainer extends Component {
             this.setState({
                 animate: "animated zoomOut",
                 path: "/",
-                buttonTitle: "Start over"
+                buttonTitle: "Start over",
+                selectPhaseAnimation: "animated fadeInUp"
             });
             setTimeout(() => {
                 this.props.history.push(path);
@@ -55,6 +63,7 @@ class MainSceneContainer extends Component {
                 buttonTitle: "Play now!",
                 path: "/waiting",
                 currentCard: 0,
+                selectPhaseAnimation: "animated fadeInUp"
             })
             this.props.history.push(path);
         }
@@ -80,7 +89,8 @@ class MainSceneContainer extends Component {
                     <Row className="showGrid">
                         <Switch>
                             <Route exact path='/'
-                                   render={() => <SelectPhase selectedCard={(e) => this.handleCardChange(e)}/>}/>
+                                   render={() => <SelectPhase selectedCard={(e) => this.handleCardChange(e)}
+                                                              animation={this.state.selectPhaseAnimation}/>}/>
                             <Route exact path='/waiting'
                                    render={() => <WaitingPhase selectedCard={this.state.currentCard}
                                                                animateStyle={this.state.animate}/>}

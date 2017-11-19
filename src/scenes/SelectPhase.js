@@ -33,7 +33,7 @@ class SelectPhase extends Component {
     render() {
         return (
             <div className="App">
-                <Grid className="animated fadeInUp" fluid={true}>
+                <Grid className={this.props.animation} fluid={true}>
                     <Row className="showGrid">
                         <CardCarousel selectedCard={(e) => this.handleCardChange(e)}/>
                     </Row>
@@ -63,7 +63,8 @@ class SelectPhase extends Component {
 }
 
 SelectPhase.propTypes = {
-    selectedCard: PropTypes.func
+    selectedCard: PropTypes.func,
+    animation: PropTypes.string
 };
 
 export default SelectPhase;

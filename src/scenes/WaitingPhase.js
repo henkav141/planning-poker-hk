@@ -26,5 +26,9 @@ WaitingPhase.propTypes = {
     animateStyle: PropTypes.string
 };
 
+WaitingPhase.defaultProps = {
+    selectedCard: 0,
+    animateStyle: "animated fadein"
+};
 
 export default WaitingPhase;
