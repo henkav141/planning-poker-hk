@@ -366,9 +366,14 @@
     }
 }
 
-body {
+html, body {
     overflow: hidden;
 }
+body {
+    position: relative
+}
+
+
 
 .img-waiting{
     margin: auto;
