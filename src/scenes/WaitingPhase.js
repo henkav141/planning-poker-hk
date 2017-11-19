@@ -21,7 +21,8 @@ class WaitingPhase extends Component {
     componentWillMount(){
         setTimeout(() => {
             this.setState({
-                infoTextFirst: "Wait for the other players to pick their card before you proceed.",
+                infoTextFirst: "Wait for the other players " +
+                "to pick their card before you proceed.",
                 infoAnimationFirst: "animated fadeInDown"
             });
         }, 800);
@@ -41,7 +42,7 @@ class WaitingPhase extends Component {
                 <br/>
                 <b className={this.state.infoAnimationFirst}>{this.state.infoTextFirst}</b>
                 <br/>
-                <b className={this.state.infoAnimationSecond}>{this.state.infoTextSecond}</b>
+                <b style={{wordWrap: "break-word"}} className={this.state.infoAnimationSecond}>{this.state.infoTextSecond}</b>
             </div>
         );
     }
