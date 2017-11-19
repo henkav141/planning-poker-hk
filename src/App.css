@@ -1,5 +1,5 @@
 /*Ipad Pro Landscape*/
-@media only screen and (max-width: 1367px) and (min-width: 1365px) and (orientation:landscape) {
+@media only screen and (max-width: 1367px) and (min-width: 1365px) and (max-height: 1025px) and (min-height: 1023px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
@@ -10,13 +10,18 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 35%;
+        margin: auto !important;
+        width: 35% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 35% !important;
     }
 }
 
 /*Ipad Landscape*/
-@media only screen and (max-width: 1025px) and (min-width: 1023px) and (orientation:landscape) {
+@media only screen and (max-width: 1025px) and (min-width: 1023px) and (max-height: 769px) and (min-height: 767px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
@@ -27,89 +32,119 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 35%;
+        margin: auto !important;
+        width: 35% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 34% !important;
     }
 }
 
 /*Iphone 6 Plus Landscape*/
-@media only screen and (max-width: 737px) and (min-width: 735px) and (orientation:landscape) {
+@media only screen and (max-width: 737px) and (min-width: 735px) and (max-height: 415px) and (min-height: 413px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
 
     .carousel-image{
         margin: auto;
-        width: 22% !important;
+        width: 20% !important;
     }
 
     .img-waiting{
-        margin: auto;
-        width: 18%;
+        margin: auto !important;
+        width: 18% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 18% !important;
     }
 }
 /*Iphone 6 Landscape*/
-@media only screen and (max-width: 668px) and (min-width: 666px) and (orientation:landscape) {
+@media only screen and (max-width: 668px) and (min-width: 666px) and (max-height: 376px) and (min-height: 374px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
 
     .carousel-image{
-        margin: auto;
-        width: 20% !important;
+        margin: auto !important;
+        width: 18% !important;
     }
 
     .img-waiting{
-        margin: auto;
-        width: 16%;
+        margin: auto !important;
+        width: 16% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 17% !important;
     }
 }
 /*Iphone 5 Landscape*/
-@media only screen and (max-width: 569px) and (min-width: 567px) and (orientation:landscape) {
+@media only screen and (max-width: 569px) and (min-width: 567px) and (max-height: 321px) and (min-height: 319px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
 
     .carousel-image{
-        margin: auto;
-        width: 15% !important;
+        margin: auto !important;
+        width: 18% !important;
     }
 
     .img-waiting{
-        margin: auto;
-        width: 14%;
+        margin: auto !important;
+        width: 14% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 16% !important;
     }
 }
 /*Nexus 6P and Nexus 5X Landscape*/
-@media only screen and (max-width: 733px) and (min-width: 731px) and (orientation:landscape) {
+@media only screen and (max-width: 733px) and (min-width: 731px) and (max-height: 413px) and (min-height: 411px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 20% !important;
     }
 
     .img-waiting{
-        margin: auto;
-        width: 18%;
+        margin: auto !important;
+        width: 16% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 18% !important;
     }
 }
 /*Galaxy 5S*/
-@media only screen and (max-width: 641px) and (min-width: 639px) and (orientation:landscape) {
+@media only screen and (max-width: 641px) and (min-width: 639px) and (max-height: 361px) and (min-height: 359px) and (orientation:landscape) {
     .logo {
         width: 63% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 16% !important;
     }
 
     .img-waiting{
-        margin: auto;
-        width: 16%;
+        margin: auto !important;
+        width: 16% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 17% !important;
     }
 }
 /*Ipad Portrait*/
@@ -119,29 +154,39 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 68%;
+        margin: auto !important;
+        width: 68% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 80% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 60% !important;
     }
 }
 /*Ipad Pro portrait*/
-@media only screen and (max-width: 1026px) and (min-width: 1023px) and (orientation:portrait) {
+@media only screen and (max-width: 1025px) and (min-width: 1023px) and (orientation:portrait) {
     .logo {
         width: 32% !important;
     }
 
     .img-waiting{
-        margin: auto;
-        width: 70%;
+        margin: auto !important;
+        width: 70% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 80% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 65% !important;
     }
 }
 
@@ -152,13 +197,18 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 75%;
+        margin: auto !important;
+        width: 75% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 100% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 70% !important;
     }
 }
 
@@ -169,13 +219,18 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 70%;
+        margin: auto !important;
+        width: 70% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 100% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 70% !important;
     }
 }
 
@@ -186,13 +241,18 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 65%;
+        margin: auto !important;
+        width: 65% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 100% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 70% !important;
     }
 }
 
@@ -203,13 +263,18 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 70%;
+        margin: auto !important;
+        width: 70% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 100% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 70% !important;
     }
 }
 
@@ -220,13 +285,84 @@
     }
 
     .img-waiting{
-        margin: auto;
-        width: 70%;
+        margin: auto !important;
+        width: 70% !important;
     }
 
     .carousel-image{
-        margin: auto;
+        margin: auto !important;
         width: 100% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 70% !important;
+    }
+}
+
+/*Laptop with HiDPI screen*/
+@media only screen and (max-width: 1441px) and (min-width: 1439px) and (max-height: 901px) and (min-height: 899px) {
+    .logo {
+        width: 60% !important;
+    }
+
+    .img-waiting{
+        margin: auto !important;
+        width: 28% !important;
+    }
+
+    .carousel-image{
+        margin: auto !important;
+        width: 95% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 28% !important;
+    }
+}
+
+/*Laptop with MiDPI screen*/
+@media only screen and (max-width: 1281px) and (min-width: 1279px) and (max-height: 801px) and (min-height: 799px) {
+    .logo {
+        width: 60% !important;
+    }
+
+    .img-waiting{
+        margin: auto !important;
+        width: 28% !important;
+    }
+
+    .carousel-image{
+        margin: auto !important;
+        width: 95% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 28% !important;
+    }
+}
+
+/*Laptop with Touch screen*/
+@media only screen and (max-width: 1281px) and (min-width: 1279px) and (max-height: 951px) and (min-height: 949px) {
+    .logo {
+        width: 60% !important;
+    }
+
+    .img-waiting{
+        margin: auto !important;
+        width: 33% !important;
+    }
+
+    .carousel-image{
+        margin: auto !important;
+        width: 95% !important;
+    }
+
+    .img-reveal{
+        margin: auto !important;
+        width: 33% !important;
     }
 }
 
@@ -237,6 +373,11 @@ body {
 .img-waiting{
     margin: auto;
     width: 20%;
+}
+
+.img-reveal{
+    margin: auto;
+    width: 22%;
 }
 
 .testa{
