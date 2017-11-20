@@ -9,7 +9,7 @@ import CardCarousel from '../components/CardCarousel';
 import Popup from 'react-popup';
 import PropTypes from 'prop-types';
 
-// Asstive text for the user
+// Assistive text for the user
 var helpText = "Pick a card from the slider and then click 'Play' when you are ready to proceed and plan with your friends. " +
     "Pick a card by dragging the deck or clicking the dots below the deck";
 
