@@ -17,11 +17,12 @@ import coffeeCard from '../assets/cards/coffee-card.jpg';
 import noCard from '../assets/cards/no-card.jpg';
 import questionMarkCard from '../assets/cards/question-mark-card.jpg';
 
+//The reveal phase/scene of the lifecycle of this application
 class RevealPhase extends Component {
 
     constructor(props) {
         super(props)
-        this.state = {
+        this.state = { //Sets default states
             card: zeroCard,
             animation: "animated zoomInDown",
             infoText: "",
@@ -33,7 +34,7 @@ class RevealPhase extends Component {
         this.handle();
     }
 
-    handle(){
+    handle(){ // function to set the selected card (an index) to the right imported card
         var chosenCard;
         switch(this.props.selectedCard) {
             case 0:
@@ -80,13 +81,13 @@ class RevealPhase extends Component {
             card: chosenCard
         });
 
-        setTimeout(() => {
+        setTimeout(() => { //Timeout and then apply animation
             this.setState({
                 animation: "animated infinite pulse"
             });
         }, 1000);
 
-        setTimeout(() => {
+        setTimeout(() => { //Timeout and then apply animation
             this.setState({
                 infoText: "To pick another card, click 'Start over'",
                 infoAnimation: "animated fadeInDown"
