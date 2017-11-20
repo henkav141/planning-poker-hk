@@ -10,11 +10,11 @@ import WaitingPhase from '../scenes/WaitingPhase';
 import RevealPhase from '../scenes/RevealPhase';
 import {withRouter, Switch, Route} from 'react-router-dom'
 
-
+//Main container class for holding the different scenes
 class MainSceneContainer extends Component {
     constructor(props) {
         super(props)
-        this.state = {
+        this.state = { //Sets default states
             currentCard: 0,
             buttonTitle: "Play now!",
             path: "/waiting",
@@ -24,32 +24,32 @@ class MainSceneContainer extends Component {
     }
 
     handleCardChange(e) {
-        this.setState({
+        this.setState({ //Sets the current card as the value of "currentCard"-state
             currentCard: e
         })
     }
 
     nextPath(path) {
-        if (path === "/waiting") {
+        if (path === "/waiting") {//Sets the animation of the select scene to fade out and down
             this.setState({
                 selectPhaseAnimation: "animated fadeOutDown"
             });
-            setTimeout(() => {
+            setTimeout(() => { //Using timeout to set new states, mainly because new animations are being set to "animate"-state
                 this.setState({
                     animate: "animated fadeIn",
                     buttonTitle: "Proceed to reveal",
                     path: "/reveal"
                 });
-                this.props.history.push(path);
+                this.props.history.push(path); //Routes to new path
             }, 680);
 
-            setTimeout(() => {
+            setTimeout(() => { //Sets a new state to "animate" after the first timeout
                 this.setState({
                 animate: "animated infinite pulse"
             });
             }, 850);
         } else if (path === "/reveal") {
-            this.setState({
+            this.setState({ //Sets the state when transitioning to the reveal scene
                 animate: "animated zoomOut",
                 path: "/",
                 buttonTitle: "Start over",
@@ -58,7 +58,7 @@ class MainSceneContainer extends Component {
             setTimeout(() => {
                 this.props.history.push(path);
             }, 500);
-        } else if (path === "/") {
+        } else if (path === "/") { //Sets the state for the transition to the select phase
             this.setState({
                 buttonTitle: "Play now!",
                 path: "/waiting",
