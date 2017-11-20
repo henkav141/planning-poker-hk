@@ -1,5 +1,4 @@
-/*Ipad Pro Landscape*/
-@media only screen and (min-width: 2559) {
+@media (min-width: 2559px) {
     .logo {
         width: 11% !important;
     }
