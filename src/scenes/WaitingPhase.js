@@ -10,7 +10,7 @@ class WaitingPhase extends Component {
 
     constructor(props) {
         super(props)
-        this.state = {
+        this.state = { //Default states, empty string because of fade in animation after timeout
             infoTextFirst: "",
             infoTextSecond: "",
             infoAnimationFirst: "",
@@ -19,7 +19,7 @@ class WaitingPhase extends Component {
     }
 
     componentWillMount(){
-        setTimeout(() => {
+        setTimeout(() => { //Fade in animation after 800ms and apply text to states on first line
             this.setState({
                 infoTextFirst: "Wait for the other players " +
                 "to pick their card before you proceed.",
@@ -27,7 +27,7 @@ class WaitingPhase extends Component {
             });
         }, 800);
 
-        setTimeout(() => {
+        setTimeout(() => {//Fade in animation after 800ms and apply text to states on second line
             this.setState({
                 infoTextSecond: "When you are ready, click 'Proceed to reveal' to reveal your card.",
                 infoAnimationSecond: "animated fadeInDown"
