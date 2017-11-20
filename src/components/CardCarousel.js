@@ -19,7 +19,7 @@ import PropTypes from 'prop-types';
 
 class CardCarousel extends Component {
     render() {
-        const settings = {
+        const settings = { //Default settings for the carousel component
             dots: true,
             speed: 500,
             slidesToShow: 3,
@@ -28,13 +28,13 @@ class CardCarousel extends Component {
             centerMode: true,
             responsive: [
                 {
-                    breakpoint: 1025,
+                    breakpoint: 1025, //Settings to be applied when the width of the screen is <=1025
                     settings: {
                         slidesToShow: 1
                     }
                 },
                 {
-                    breakpoint: 321,
+                    breakpoint: 321, //Settings to be applied when the width of the screen is <=321
                     settings: {
                         slidesToShow: 1,
                         dots: false
@@ -44,7 +44,7 @@ class CardCarousel extends Component {
         };
 
 
-        return (
+        return ( //All cards added to the slider
             <div className="carousel-container">
                 <Slider afterChange={(currentCard) => this.props.selectedCard(currentCard)} {...settings}>
                     <div><img className="carousel-image" src={zeroCard} alt="0"/></div>
@@ -66,7 +66,7 @@ class CardCarousel extends Component {
     }
 };
 
-CardCarousel.propTypes = {
+CardCarousel.propTypes = { // Callback function prop for passing data to parent component
     selectedCard: PropTypes.func
 };
 
