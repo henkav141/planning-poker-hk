@@ -1,6 +1,7 @@
 /**
  * Created by Henrik on 2017-11-18.
  */
+//tabortkommentar
 import React, {Component} from 'react';
 import '../App.css';
 import {Button, Grid, Row, Col} from 'react-bootstrap';
